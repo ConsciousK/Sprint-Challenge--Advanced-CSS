@@ -7,6 +7,7 @@
   margin: 0 auto;
   border-radius: 10px;
   height: 100%;
+  margin-top: 75px;
 }
 .walkcontainerstyling {
   display: flex;
@@ -191,8 +192,10 @@ p {
   align-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 1000px;
+  position: fixed;
+  top: 0;
   width: 100%;
+  opacity: 0.9;
   background-color: #e7ebeb;
 }
 .navcontainer h1 {
@@ -204,7 +207,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 80%;
+  width: 40%;
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -244,6 +247,7 @@ footer {
   margin: 0 auto;
   border-radius: 10px;
   height: 100%;
+  margin-top: 75px;
 }
 .home .space-images {
   display: flex;
