@@ -9,11 +9,18 @@
   height: 100%;
 }
 .walkcontainerstyling {
+  display: flex;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
-  display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .walkcontainerstyling {
+    flex-direction: column;
+    margin-top: 0;
+    padding: 15px 15px;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -197,9 +204,14 @@ p {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 50%;
+  width: 80%;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .navcontainer .linkcontainer {
+    width: 80%;
+  }
 }
 .navcontainer .navlink {
   align-content: center;
@@ -238,6 +250,23 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
@@ -254,14 +283,26 @@ footer {
   margin-top: 13px;
 }
 .home .walk {
+  display: flex;
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
-  display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    margin-top: 0;
+    padding: 15px 15px;
+  }
 }
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -279,14 +320,33 @@ footer {
   font-size: 20px;
   width: 35%;
   height: 30px;
+  cursor: pointer;
 }
 .home .walk .walk-text .btn:hover {
   background-color: #ffffff;
   color: #000000;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    order: -1;
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 0 auto;
+    height: 100%;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
