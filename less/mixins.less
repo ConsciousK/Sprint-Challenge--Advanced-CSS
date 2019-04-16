@@ -1,1 +1,46 @@
 // Mixins Here
+.header-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 100%;
+    margin-top:75px;
+}
+
+.walkcontainerstyling{
+    display: flex;
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    justify-content: center;  
+    @media @phone {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 15px 15px;
+    }
+}
+
+.signupbutton(@bgcolor,@fcolor, @fsize, @bradius){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @bgcolor;
+    border-radius: @bradius;
+    color: @fcolor;
+    font-size: @fsize;
+    width: 35%;
+    height: 30px;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten(black, 100%);
+        color: darken(white, 100%);
+      }
+
+    @media @phone{
+        width:100%;
+    }
+}
